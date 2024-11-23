@@ -228,10 +228,6 @@ img {
     justify-content: center;
 }
 
-.ikon {
-  
-}
-
 .advantages-title {
     margin-bottom: 8px;
     font-weight: 500;
@@ -250,14 +246,14 @@ img {
 
 /* section-team */
 
-.section-team {
-     background-color: #f4f4fd;
-    padding: 120px 0;
-}
-
 .team-list {
     display: flex;
     gap: 24px;
+}
+
+.section-team {
+     background-color: #f4f4fd;
+    padding: 120px 0;
 }
 
 .name-container {
@@ -288,6 +284,29 @@ img {
     text-align: center;
     color: #434455;
 }
+
+.social-list {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 24px;    
+}
+
+.social-item {
+max-width: 100%;
+max-height: 100%;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    fill: #f4f4fd;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    }
 
 /* section portfolio */
 
