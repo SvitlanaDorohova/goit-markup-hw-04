@@ -151,7 +151,7 @@ img {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office.jpg);
     }
 
 .title-page {
@@ -333,9 +333,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     list-style: none;
     overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .thumb {
+    overflow: hidden;
     position: relative;
     width: 100%;
     height: auto;
@@ -365,7 +367,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #4d5ae5;
     
     transition-property: transform;
-    transition: ransform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
 
 .portfolip-item-container {
@@ -376,7 +378,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .portfolio-item:hover  .overlay-content {
     transform: translateY(0);
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-subtitle {
@@ -401,12 +403,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: baseline;
     margin-right: 120px;
-}
+    }
 
 .page-footer {
     background-color: #2e2f42;
     padding: 100px 0;
-}
+    }
 
 .footer-logo {
     display: inline-block;
@@ -452,8 +454,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-item-social {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 .footer-link-social {
     width: 100%;
