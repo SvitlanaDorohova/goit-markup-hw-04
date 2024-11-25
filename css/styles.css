@@ -151,7 +151,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office\ 1.jpg);
+    url(../images/people-office\ 1.jpg);
     }
 
 .title-page {
@@ -289,7 +289,8 @@ img {
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 24px;    
+gap: 24px;
+margin-top: 8px;    
 }
 
 .social-item {
@@ -306,6 +307,7 @@ max-height: 100%;
     fill: #f4f4fd;
     background-color: #4d5ae5;
     border-radius: 50%;
+    
     }
 
 /* section portfolio */
@@ -321,14 +323,45 @@ max-height: 100%;
  row-gap: 48px;
 }
 
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.thumb {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #4d5ae5;
+}
+
+.overlay-content {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    color: #f4f4fd;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+    text-align: center; 
+ }
+
 .portfolip-item-container {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
 
-.portfolio-item {
-width: calc((100% - 48px) / 3);
+.portfolio-item:hover  .overlay-content {
+    transform: translateY(0);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-subtitle {
@@ -370,4 +403,48 @@ width: calc((100% - 48px) / 3);
 .footer-logo .logo-part {
     color: #f4f4fd;
     ;
+}
+
+.footer-social {
+    display: flex;
+    align-items: baseline;
+}
+
+/* .footer-social {
+    background-color: aqua;
+} */
+
+.footer-text-social {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.footer-list-social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-item-social {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-link-social {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f
+.footer-link-social:hover,
+.footer-link-social:focus {
+    background-color: #31d0aa;
 }
